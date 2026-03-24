@@ -67,7 +67,7 @@
         /* Navigation */
         .nav { position: sticky; top: 0; z-index: 1000; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,0,0,0.05); padding: 16px 0; }
         .nav-content { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.5rem; font-weight: 800; color: var(--brand-blue); text-decoration: none; letter-spacing: -0.5px; }
+        .logo { display: flex; align-items: center; text-decoration: none; }
         .nav-contact { display: flex; gap: 16px; align-items: center; }
         .nav-phone { font-weight: 700; color: var(--brand-dark); text-decoration: none; display: flex; align-items: center; gap: 8px; font-size: 1.1rem; transition: var(--transition); }
         .nav-phone:hover { color: var(--brand-blue); }
@@ -98,7 +98,7 @@
         .card h3 { font-size: 1.5rem; margin-bottom: 12px; }
         .card p { color: var(--text-muted); margin-bottom: 24px; flex-grow: 1; }
         .card-link-text { font-weight: 700; color: var(--brand-blue); font-size: 0.9rem; display: flex; align-items: center; gap: 8px; }
-        .card:hover .card-link-text { gap: 12px; } /* Micro-interaction */
+        .card:hover .card-link-text { gap: 12px; }
 
         /* Detailed Services */
         .service-details { padding: 40px 0 100px; }
@@ -126,7 +126,6 @@
         /* Footer */
         footer { background: white; padding: 80px 0 40px; border-top: 1px solid #e2e8f0; }
         .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; padding-bottom: 40px; }
-        .footer-logo { font-size: 1.5rem; font-weight: 800; color: var(--brand-blue); margin-bottom: 20px; display: block; }
         .footer-contact p { margin-bottom: 16px; display: flex; align-items: center; gap: 12px; color: var(--text-muted); }
         .footer-contact a { color: var(--text-main); font-weight: 600; text-decoration: none; transition: var(--transition); }
         .footer-contact a:hover { color: var(--brand-blue); }
@@ -137,8 +136,8 @@
         .floating-cta:active { transform: scale(0.9); }
         
         @media (max-width: 768px) {
-            .nav-contact .btn { display: none; } /* Hide button in header on mobile */
-            .floating-cta { display: flex; } /* Show floating button */
+            .nav-contact .btn { display: none; }
+            .floating-cta { display: flex; }
             .service-row { padding: 40px 0; gap: 40px; }
             .service-image { height: 300px; }
         }
@@ -148,7 +147,9 @@
 
     <nav class="nav">
         <div class="container nav-content">
-            <a href="/" class="logo">Otto Entreprise</a>
+            <a href="./" class="logo" aria-label="Forside">
+                <img src="assets/images/logo-otto-entreprise.png" alt="Otto Entreprise Logo" style="height: 40px; width: auto; display: block;">
+            </a>
             <div class="nav-contact">
                 <a href="tel:44160770" class="nav-phone"><i class="fa-solid fa-phone"></i> 44 16 07 70</a>
                 <a href="mailto:kontakt@ottoentreprise.dk" class="btn">Skriv til os</a>
@@ -330,7 +331,9 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <span class="footer-logo">Otto Entreprise</span>
+                    <a href="./" style="display: inline-block; margin-bottom: 20px;">
+                        <img src="assets/images/logo-otto-entreprise.png" alt="Otto Entreprise Logo" style="height: 40px; width: auto;">
+                    </a>
                     <p style="color: var(--text-muted); max-width: 300px;">Vi bygger på tillid, klar kommunikation og solidt dansk håndværk. Din lokale partner i København.</p>
                 </div>
                 <div>
