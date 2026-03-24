@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Otto Entreprise - Din lokale ekspert i København inden for tømrer, murer, maler og anlægsarbejde. Få et uforpligtende tilbud i dag.">
+    
+    <meta property="og:title" content="Otto Entreprise | Kvalitet & Tillid">
+    <meta property="og:description" content="Professionelle håndværksløsninger i København og omegn.">
+    <meta property="og:image" content="https://www.ottoentreprise.dk/assets/images/hero-background.jpg">
+    <meta property="og:url" content="https://www.ottoentreprise.dk/">
+    
+    <title>Otto Entreprise | Kvalitetshåndværk i København</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GeneralContractor",
+      "name": "Otto Entreprise",
+      "image": "https://www.ottoentreprise.dk/assets/images/logo-otto-entreprise.png",
+      "@id": "https://www.ottoentreprise.dk/",
+      "url": "https://www.ottoentreprise.dk/",
+      "telephone": "+4544160770",
+      "email": "kontakt@ottoentreprise.dk",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "København",
+        "addressCountry": "DK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 55.676098,
+        "longitude": 12.568337
+      },
+      "areaServed": "København og omegn",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        :root {
+            --brand-blue: #2965a8;
+            --brand-dark: #0f172a;
+            --surface: #ffffff;
+            --bg-body: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent: #10b981;
+            --shadow-sm: 0 4px 6px rgba(0,0,0,0.02);
+            --shadow-md: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg-body); color: var(--text-main); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        
+        /* Typography */
+        h1, h2, h3, h4 { color: var(--brand-dark); font-weight: 800; line-height: 1.2; }
+        .section-title { text-align: center; margin-bottom: 16px; font-size: clamp(2rem, 4vw, 2.5rem); }
+        .section-subtitle { text-align: center; color: var(--text-muted); font-size: 1.1rem; margin-bottom: 60px; max-width: 600px; margin-left: auto; margin-right: auto; }
+
+        /* Navigation */
+        .nav { position: sticky; top: 0; z-index: 1000; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,0,0,0.05); padding: 16px 0; }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--brand-blue); text-decoration: none; letter-spacing: -0.5px; }
+        .nav-contact { display: flex; gap: 16px; align-items: center; }
+        .nav-phone { font-weight: 700; color: var(--brand-dark); text-decoration: none; display: flex; align-items: center; gap: 8px; font-size: 1.1rem; transition: var(--transition); }
+        .nav-phone:hover { color: var(--brand-blue); }
+
+        /* Buttons */
+        .btn { background: var(--brand-blue); color: white; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 12px; transition: var(--transition); border: none; cursor: pointer; }
+        .btn:hover { background: #1e4b7d; transform: translateY(-2px); box-shadow: 0 10px 15px rgba(41, 101, 168, 0.2); }
+        .btn-outline { background: transparent; border: 2px solid var(--brand-blue); color: var(--brand-blue); }
+        .btn-outline:hover { background: var(--brand-blue); color: white; }
+
+        /* Hero */
+        .hero { position: relative; padding: 140px 24px; text-align: center; color: white; background: var(--brand-dark); min-height: 80vh; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.8), rgba(15,23,42,0.95)); z-index: 0; }
+        .hero-img { position: absolute; inset: 0; background: url('assets/images/hero-background.jpg') center/cover; z-index: 0; }
+        .hero-content { position: relative; z-index: 1; max-width: 900px; }
+        .hero h1 { font-size: clamp(2.5rem, 6vw, 5rem); color: white; margin-bottom: 24px; letter-spacing: -1px; }
+        .hero p { font-size: clamp(1.1rem, 2vw, 1.25rem); margin-bottom: 40px; color: #cbd5e1; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .trust-badges { display: flex; justify-content: center; gap: 32px; margin-top: 48px; flex-wrap: wrap; }
+        .trust-badge { display: flex; align-items: center; gap: 8px; color: #e2e8f0; font-size: 0.95rem; font-weight: 500; }
+        .trust-badge i { color: var(--accent); }
+
+        /* Services Grid */
+        .services-overview { padding: 100px 0; background: white; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+        .card { background: var(--bg-body); padding: 40px; border-radius: 16px; transition: var(--transition); border: 1px solid transparent; display: flex; flex-direction: column; text-decoration: none; color: inherit; }
+        .card:hover { transform: translateY(-5px); border-color: rgba(41, 101, 168, 0.2); background: white; box-shadow: var(--shadow-md); }
+        .card i { font-size: 2.5rem; color: var(--brand-blue); margin-bottom: 24px; }
+        .card h3 { font-size: 1.5rem; margin-bottom: 12px; }
+        .card p { color: var(--text-muted); margin-bottom: 24px; flex-grow: 1; }
+        .card-link-text { font-weight: 700; color: var(--brand-blue); font-size: 0.9rem; display: flex; align-items: center; gap: 8px; }
+        .card:hover .card-link-text { gap: 12px; } /* Micro-interaction */
+
+        /* Detailed Services */
+        .service-details { padding: 40px 0 100px; }
+        .service-row { display: flex; flex-wrap: wrap; align-items: center; gap: 60px; padding: 80px 0; border-bottom: 1px solid #e2e8f0; }
+        .service-row:last-child { border-bottom: none; }
+        .service-row:nth-child(even) { flex-direction: row-reverse; }
+        .service-text { flex: 1; min-width: 320px; }
+        .service-text h2 { font-size: 2.2rem; margin-bottom: 24px; display: flex; align-items: center; gap: 16px; }
+        .service-text p { margin-bottom: 24px; font-size: 1.1rem; color: var(--text-muted); }
+        .service-text ul { list-style: none; margin-bottom: 32px; }
+        .service-text ul li { margin-bottom: 16px; display: flex; align-items: flex-start; gap: 12px; font-weight: 500; }
+        .service-text ul li i { color: var(--accent); margin-top: 4px; }
+        .service-image { flex: 1; min-width: 320px; height: 450px; border-radius: 16px; background-size: cover; background-position: center; box-shadow: var(--shadow-md); }
+
+        /* Testimonials (Social Proof) */
+        .testimonials { background: var(--brand-dark); color: white; padding: 100px 0; }
+        .testimonials .section-title { color: white; }
+        .test-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; margin-top: 60px; }
+        .test-card { background: rgba(255,255,255,0.05); padding: 40px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1); }
+        .stars { color: #fbbf24; margin-bottom: 16px; font-size: 1.2rem; }
+        .test-card p { font-style: italic; color: #cbd5e1; margin-bottom: 24px; }
+        .test-author { font-weight: 600; color: white; display: flex; align-items: center; gap: 12px; }
+        .test-author::before { content: ''; width: 30px; height: 2px; background: var(--brand-blue); }
+
+        /* Footer */
+        footer { background: white; padding: 80px 0 40px; border-top: 1px solid #e2e8f0; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; padding-bottom: 40px; }
+        .footer-logo { font-size: 1.5rem; font-weight: 800; color: var(--brand-blue); margin-bottom: 20px; display: block; }
+        .footer-contact p { margin-bottom: 16px; display: flex; align-items: center; gap: 12px; color: var(--text-muted); }
+        .footer-contact a { color: var(--text-main); font-weight: 600; text-decoration: none; transition: var(--transition); }
+        .footer-contact a:hover { color: var(--brand-blue); }
+        .footer-copy { text-align: center; padding-top: 40px; color: var(--text-muted); border-top: 1px solid #e2e8f0; font-size: 0.9rem; }
+
+        /* Floating Mobile CTA */
+        .floating-cta { display: none; position: fixed; bottom: 24px; right: 24px; background: var(--brand-blue); color: white; width: 60px; height: 60px; border-radius: 50%; justify-content: center; align-items: center; font-size: 1.5rem; box-shadow: 0 10px 25px rgba(41, 101, 168, 0.4); z-index: 1000; text-decoration: none; transition: transform 0.3s ease; }
+        .floating-cta:active { transform: scale(0.9); }
+        
+        @media (max-width: 768px) {
+            .nav-contact .btn { display: none; } /* Hide button in header on mobile */
+            .floating-cta { display: flex; } /* Show floating button */
+            .service-row { padding: 40px 0; gap: 40px; }
+            .service-image { height: 300px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container nav-content">
+            <a href="/" class="logo">Otto Entreprise</a>
+            <div class="nav-contact">
+                <a href="tel:44160770" class="nav-phone"><i class="fa-solid fa-phone"></i> 44 16 07 70</a>
+                <a href="mailto:kontakt@ottoentreprise.dk" class="btn">Skriv til os</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-img"></div>
+        <div class="hero-content">
+            <h1>Solidt håndværk. <br>Ingen undskyldninger.</h1>
+            <p>Vi er dit lokale entreprenørfirma i København. Fra totalrenovering og brolægning til finsnedkeri. Vi møder op til tiden, leverer kvalitet og rydder op efter os selv.</p>
+            <a href="tel:44160770" class="btn" style="font-size: 1.1rem; padding: 20px 40px;">Få et uforpligtende tilbud i dag</a>
+            
+            <div class="trust-badges">
+                <div class="trust-badge"><i class="fa-solid fa-check-circle"></i> Fuld gennemsigtighed</div>
+                <div class="trust-badge"><i class="fa-solid fa-star"></i> 5/5 Kundetilfredshed</div>
+                <div class="trust-badge"><i class="fa-solid fa-shield-halved"></i> Dansk Garanti</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-overview container">
+        <h2 class="section-title">Vores Ekspertise</h2>
+        <p class="section-subtitle">Vi dækker alle faser af dit byggeprojekt. Én kontaktperson, ét ansvar.</p>
+        <div class="grid">
+            <a href="#toemrer" class="card">
+                <i class="fa-solid fa-hammer"></i>
+                <h3>Tømrer</h3>
+                <p>Nyt tag, døre/vinduer, træterrasser og totalrenovering.</p>
+                <span class="card-link-text">Se tømrerarbejde <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a href="#murer" class="card">
+                <i class="fa-solid fa-trowel-bricks"></i>
+                <h3>Murer</h3>
+                <p>Facadepuds, badeværelser, flisearbejde og fundamenter.</p>
+                <span class="card-link-text">Se murerarbejde <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a href="#maler" class="card">
+                <i class="fa-solid fa-paint-roller"></i>
+                <h3>Maler</h3>
+                <p>Filt, fuldspartling og kvalitetsmaling ude og inde.</p>
+                <span class="card-link-text">Se malerarbejde <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a href="#anlaeg" class="card">
+                <i class="fa-solid fa-leaf"></i>
+                <h3>Anlæg</h3>
+                <p>Brolægning, støttemure og komplet terrænregulering.</p>
+                <span class="card-link-text">Se anlægsarbejde <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a href="#nedrivning" class="card">
+                <i class="fa-solid fa-house-chimney-crack"></i>
+                <h3>Nedrivning</h3>
+                <p>Sikker rydning, miljøsanering og bortskaffelse.</p>
+                <span class="card-link-text">Se nedrivning <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a href="#bortskaffelse" class="card">
+                <i class="fa-solid fa-truck-ramp-box"></i>
+                <h3>Bortskaffelse</h3>
+                <p>Sortering og kørsel af bygge- og haveaffald.</p>
+                <span class="card-link-text">Læs om bortskaffelse <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Kunderne siger</h2>
+            <p class="section-subtitle" style="color: #94a3b8;">Vi lever af vores ry. Her er hvad tidligere bygherrer siger om samarbejdet.</p>
+            <div class="test-grid">
+                <div class="test-card">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"Otto Entreprise stod for totalrenovering af vores stueetage inkl. nyt gulv og opsætning af vægge. Alt spillede, og de ryddede pænt op hver dag."</p>
+                    <span class="test-author">Morten J., Frederiksberg</span>
+                </div>
+                <div class="test-card">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"Fik lagt ny indkørsel og støbt sokkel til garage. Super professionelle gutter der holdt den aftalte pris på øret. Kæmpe anbefaling herfra."</p>
+                    <span class="test-author">Sanne T., Hvidovre</span>
+                </div>
+                <div class="test-card">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"Hurtig rykning på en hastesag med vandskade. Både tømrer og maler leverede et utroligt flot stykke arbejde. De ved hvad de laver."</p>
+                    <span class="test-author">Christian V., København Ø</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-details container">
+        
+        <div id="toemrer" class="service-row">
+            <div class="service-text">
+                <h2>Tømrerarbejde</h2>
+                <p>Som erfarne tømrere i København og omegn håndterer vi alt fra mindre reparationer til store renoveringsprojekter. Vi vægter præcision og materialekendskab højt, uanset om det gælder udskiftning af vinduer, lægning af nye gulve eller en komplet tagrenovering. Vores løsninger er bygget til at holde.</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Udskiftning af døre og energioptimerede vinduer</li>
+                    <li><i class="fa-solid fa-check"></i> Nyt tag, tagrenovering og etablering af kviste</li>
+                    <li><i class="fa-solid fa-check"></i> Træterrasser, skure og udendørs anlæg</li>
+                </ul>
+                <a href="tel:44160770" class="btn btn-outline">Få et tømrertilbud</a>
+            </div>
+            <div class="service-image" style="background-image: url('assets/images/services/toemrer-tagrenovering.jpg');" loading="lazy"></div>
+        </div>
+
+        <div id="murer" class="service-row">
+            <div class="service-text">
+                <h2>Murerarbejde</h2>
+                <p>Et solidt fundament og fejlfrit murerværk er essentielt. Otto Entreprise udfører professionelt murerarbejde for både private og erhverv. Vi mestrer både de klassiske murermetoder og de nyeste teknikker inden for facaderenovering, vådrumssikring og fliselægning på badeværelser.</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Facaderenovering, vandskuring og fugning</li>
+                    <li><i class="fa-solid fa-check"></i> Flise- og klinkearbejde inkl. komplet vådrum</li>
+                    <li><i class="fa-solid fa-check"></i> Støbning af fundamenter og opmuring</li>
+                </ul>
+                <a href="tel:44160770" class="btn btn-outline">Få et murertilbud</a>
+            </div>
+            <div class="service-image" style="background-image: url('assets/images/services/murer-facade.jpg');" loading="lazy"></div>
+        </div>
+
+        <div id="maler" class="service-row">
+            <div class="service-text">
+                <h2>Malerarbejde</h2>
+                <p>Det perfekte finish kræver det rigtige forarbejde. Vores malerafdeling sikrer et fejlfrit resultat, uanset om det gælder indvendig opspartling af hele lejligheder, eller udvendig træbeskyttelse og facadebehandling. Vi anvender udelukkende kvalitetsmaling for højeste dækkeevne og levetid.</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Fuldspartling, slibning og opsætning af filt</li>
+                    <li><i class="fa-solid fa-check"></i> Indvendig maling af vægge, lofter og træværk</li>
+                    <li><i class="fa-solid fa-check"></i> Maling af facader, vinduer og udhæng</li>
+                </ul>
+                <a href="tel:44160770" class="btn btn-outline">Få et malertilbud</a>
+            </div>
+            <div class="service-image" style="background-image: url('assets/images/services/maler-spartling.jpg');" loading="lazy"></div>
+        </div>
+
+        <div id="anlaeg" class="service-row">
+            <div class="service-text">
+                <h2>Anlægsarbejde & Brolægning</h2>
+                <p>Uanset om det drejer sig om en ny indkørsel, en kompleks støttemur eller en omlægning af haven, leverer vi professionelt anlægsarbejde. Vi har maskinkraften til terrænregulering, og vores brolæggere sikrer snorlige linjer med korrekt afvanding, der ikke sætter sig med tiden.</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Brolægning af indkørsler, stier og terrasser</li>
+                    <li><i class="fa-solid fa-check"></i> Etablering af støttemure og trapper</li>
+                    <li><i class="fa-solid fa-check"></i> Terrænregulering, planering og gravearbejde</li>
+                </ul>
+                <a href="tel:44160770" class="btn btn-outline">Få et anlægstilbud</a>
+            </div>
+            <div class="service-image" style="background-image: url('assets/images/services/anlaeg-brolaegning.jpg');" loading="lazy"></div>
+        </div>
+
+        <div id="nedrivning" class="service-row">
+            <div class="service-text">
+                <h2>Nedrivning & Sanering</h2>
+                <p>Sikker nedrivning kræver præcision og kendskab til bygningsfysik. Vi udfører alt fra totalnedrivninger af mindre bygninger (skure/garager) til selektiv indvendig rydning før renovering af lejligheder. Opgaven håndteres efter de strengeste miljø- og sikkerhedskrav.</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Indvendig rydning (gulve, lofter, lette vægge)</li>
+                    <li><i class="fa-solid fa-check"></i> Nedbrydning af skure, garager og tilbygninger</li>
+                    <li><i class="fa-solid fa-check"></i> Sikker håndtering af problematiske materialer</li>
+                </ul>
+                <a href="tel:44160770" class="btn btn-outline">Få tilbud på nedrivning</a>
+            </div>
+            <div class="service-image" style="background-image: url('assets/images/services/nedrivning-rydning.jpg');" loading="lazy"></div>
+        </div>
+
+        <div id="bortskaffelse" class="service-row">
+            <div class="service-text">
+                <h2>Håndtering af Byggeaffald</h2>
+                <p>Brug tiden på dit projekt, og lad os håndtere den tunge logistik. Vi tilbyder effektiv og miljørigtig afhentning og bortskaffelse af alt bygge- og haveaffald. Affaldet sorteres og deponeres på godkendte genbrugsstationer i overensstemmelse med de københavnske regulativer.</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Afhentning og kørsel af blandet byggeaffald</li>
+                    <li><i class="fa-solid fa-check"></i> Bortskaffelse af storskrald, jord og haveaffald</li>
+                    <li><i class="fa-solid fa-check"></i> 100% miljøkorrekt og dokumenteret deponering</li>
+                </ul>
+                <a href="tel:44160770" class="btn btn-outline">Bestil afhentning</a>
+            </div>
+            <div class="service-image" style="background-image: url('assets/images/services/affald-bortskaffelse.jpg');" loading="lazy"></div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <span class="footer-logo">Otto Entreprise</span>
+                    <p style="color: var(--text-muted); max-width: 300px;">Vi bygger på tillid, klar kommunikation og solidt dansk håndværk. Din lokale partner i København.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 20px;">Hurtige Links</h4>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <a href="#toemrer" style="color: var(--text-muted); text-decoration: none;">Tømrer</a>
+                        <a href="#murer" style="color: var(--text-muted); text-decoration: none;">Murer</a>
+                        <a href="#maler" style="color: var(--text-muted); text-decoration: none;">Maler</a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4 style="margin-bottom: 20px;">Kontakt Os</h4>
+                    <p><i class="fa-solid fa-phone" style="color: var(--brand-blue);"></i> <a href="tel:44160770">44 16 07 70</a></p>
+                    <p><i class="fa-solid fa-envelope" style="color: var(--brand-blue);"></i> <a href="mailto:kontakt@ottoentreprise.dk">kontakt@ottoentreprise.dk</a></p>
+                    <p><i class="fa-solid fa-location-dot" style="color: var(--brand-blue);"></i> <span style="color: var(--text-main); font-weight: 600;">København & Omegn</span></p>
+                </div>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 Otto Entreprise ApS. Alle rettigheder forbeholdes. | CVR: 46273427
+            </div>
+        </div>
+    </footer>
+
+    <a href="tel:44160770" class="floating-cta" aria-label="Ring til os">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+</body>
+</html>
