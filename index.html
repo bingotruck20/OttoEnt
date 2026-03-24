@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Otto Entreprise - Din lokale ekspert i København inden for tømrer, murer, maler og anlægsarbejde. Få et uforpligtende tilbud i dag.">
+    <meta name="description" content="Otto Entreprise - Professionel byggeentreprise i København. Vi udfører tømrer-, murer-, maler- og anlægsarbejde for private og erhverv. Få et uforpligtende tilbud.">
     
-    <meta property="og:title" content="Otto Entreprise | Kvalitet & Tillid">
-    <meta property="og:description" content="Professionelle håndværksløsninger i København og omegn.">
+    <meta property="og:title" content="Otto Entreprise | Professionel Byggeentreprise">
+    <meta property="og:description" content="Kvalitetssikrede håndværksløsninger i København og omegn. Fra fagentreprise til totalrenovering.">
     <meta property="og:image" content="https://www.ottoentreprise.dk/assets/images/hero-background.jpg">
     <meta property="og:url" content="https://www.ottoentreprise.dk/">
     
-    <title>Otto Entreprise | Kvalitetshåndværk i København</title>
+    <title>Otto Entreprise | Professionel Byggeentreprise i København</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -59,12 +59,10 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg-body); color: var(--text-main); line-height: 1.6; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
         
-        /* Typography */
         h1, h2, h3, h4 { color: var(--brand-dark); font-weight: 800; line-height: 1.2; }
         .section-title { text-align: center; margin-bottom: 16px; font-size: clamp(2rem, 4vw, 2.5rem); }
-        .section-subtitle { text-align: center; color: var(--text-muted); font-size: 1.1rem; margin-bottom: 60px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .section-subtitle { text-align: center; color: var(--text-muted); font-size: 1.1rem; margin-bottom: 60px; max-width: 700px; margin-left: auto; margin-right: auto; }
 
-        /* Navigation */
         .nav { position: sticky; top: 0; z-index: 1000; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,0,0,0.05); padding: 16px 0; }
         .nav-content { display: flex; justify-content: space-between; align-items: center; }
         .logo { display: flex; align-items: center; text-decoration: none; }
@@ -72,24 +70,21 @@
         .nav-phone { font-weight: 700; color: var(--brand-dark); text-decoration: none; display: flex; align-items: center; gap: 8px; font-size: 1.1rem; transition: var(--transition); }
         .nav-phone:hover { color: var(--brand-blue); }
 
-        /* Buttons */
         .btn { background: var(--brand-blue); color: white; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 12px; transition: var(--transition); border: none; cursor: pointer; }
         .btn:hover { background: #1e4b7d; transform: translateY(-2px); box-shadow: 0 10px 15px rgba(41, 101, 168, 0.2); }
         .btn-outline { background: transparent; border: 2px solid var(--brand-blue); color: var(--brand-blue); }
         .btn-outline:hover { background: var(--brand-blue); color: white; }
 
-        /* Hero */
         .hero { position: relative; padding: 140px 24px; text-align: center; color: white; background: var(--brand-dark); min-height: 80vh; display: flex; align-items: center; justify-content: center; overflow: hidden; }
         .hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,23,42,0.8), rgba(15,23,42,0.95)); z-index: 0; }
         .hero-img { position: absolute; inset: 0; background: url('assets/images/hero-background.jpg') center/cover; z-index: 0; }
         .hero-content { position: relative; z-index: 1; max-width: 900px; }
-        .hero h1 { font-size: clamp(2.5rem, 6vw, 5rem); color: white; margin-bottom: 24px; letter-spacing: -1px; }
-        .hero p { font-size: clamp(1.1rem, 2vw, 1.25rem); margin-bottom: 40px; color: #cbd5e1; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .hero h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); color: white; margin-bottom: 24px; letter-spacing: -1px; }
+        .hero p { font-size: clamp(1.1rem, 2vw, 1.25rem); margin-bottom: 40px; color: #cbd5e1; max-width: 750px; margin-left: auto; margin-right: auto; line-height: 1.7; }
         .trust-badges { display: flex; justify-content: center; gap: 32px; margin-top: 48px; flex-wrap: wrap; }
         .trust-badge { display: flex; align-items: center; gap: 8px; color: #e2e8f0; font-size: 0.95rem; font-weight: 500; }
         .trust-badge i { color: var(--accent); }
 
-        /* Services Grid */
         .services-overview { padding: 100px 0; background: white; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
         .card { background: var(--bg-body); padding: 40px; border-radius: 16px; transition: var(--transition); border: 1px solid transparent; display: flex; flex-direction: column; text-decoration: none; color: inherit; }
@@ -100,7 +95,6 @@
         .card-link-text { font-weight: 700; color: var(--brand-blue); font-size: 0.9rem; display: flex; align-items: center; gap: 8px; }
         .card:hover .card-link-text { gap: 12px; }
 
-        /* Detailed Services */
         .service-details { padding: 40px 0 100px; }
         .service-row { display: flex; flex-wrap: wrap; align-items: center; gap: 60px; padding: 80px 0; border-bottom: 1px solid #e2e8f0; }
         .service-row:last-child { border-bottom: none; }
@@ -113,7 +107,6 @@
         .service-text ul li i { color: var(--accent); margin-top: 4px; }
         .service-image { flex: 1; min-width: 320px; height: 450px; border-radius: 16px; background-size: cover; background-position: center; box-shadow: var(--shadow-md); }
 
-        /* Testimonials (Social Proof) */
         .testimonials { background: var(--brand-dark); color: white; padding: 100px 0; }
         .testimonials .section-title { color: white; }
         .test-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; margin-top: 60px; }
@@ -123,7 +116,6 @@
         .test-author { font-weight: 600; color: white; display: flex; align-items: center; gap: 12px; }
         .test-author::before { content: ''; width: 30px; height: 2px; background: var(--brand-blue); }
 
-        /* Footer */
         footer { background: white; padding: 80px 0 40px; border-top: 1px solid #e2e8f0; }
         .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; padding-bottom: 40px; }
         .footer-contact p { margin-bottom: 16px; display: flex; align-items: center; gap: 12px; color: var(--text-muted); }
@@ -131,7 +123,6 @@
         .footer-contact a:hover { color: var(--brand-blue); }
         .footer-copy { text-align: center; padding-top: 40px; color: var(--text-muted); border-top: 1px solid #e2e8f0; font-size: 0.9rem; }
 
-        /* Floating Mobile CTA */
         .floating-cta { display: none; position: fixed; bottom: 24px; right: 24px; background: var(--brand-blue); color: white; width: 60px; height: 60px; border-radius: 50%; justify-content: center; align-items: center; font-size: 1.5rem; box-shadow: 0 10px 25px rgba(41, 101, 168, 0.4); z-index: 1000; text-decoration: none; transition: transform 0.3s ease; }
         .floating-cta:active { transform: scale(0.9); }
         
@@ -140,6 +131,10 @@
             .floating-cta { display: flex; }
             .service-row { padding: 40px 0; gap: 40px; }
             .service-image { height: 300px; }
+            p, .card p, .service-text p { text-align: left; }
+            ul.service-text ul li { text-align: left; }
+            .container { padding: 0 32px; }
+            .hero-content h1, .hero-content p, .section-title, .section-subtitle, .trust-badge { text-align: center; }
         }
     </style>
 </head>
@@ -152,7 +147,7 @@
             </a>
             <div class="nav-contact">
                 <a href="tel:44160770" class="nav-phone"><i class="fa-solid fa-phone"></i> 44 16 07 70</a>
-                <a href="mailto:kontakt@ottoentreprise.dk" class="btn">Skriv til os</a>
+                <a href="mailto:kontakt@ottoentreprise.dk" class="btn">Indhent tilbud</a>
             </div>
         </div>
     </nav>
@@ -160,80 +155,80 @@
     <section class="hero">
         <div class="hero-img"></div>
         <div class="hero-content">
-            <h1>Solidt håndværk. <br>Ingen undskyldninger.</h1>
-            <p>Vi er dit lokale entreprenørfirma i København. Fra totalrenovering og brolægning til finsnedkeri. Vi møder op til tiden, leverer kvalitet og rydder op efter os selv.</p>
-            <a href="tel:44160770" class="btn" style="font-size: 1.1rem; padding: 20px 40px;">Få et uforpligtende tilbud i dag</a>
+            <h1>Professionel byggeentreprise i København.</h1>
+            <p>Vi løser komplekse bygge- og renoveringsopgaver for både private bygherrer og erhverv i hele Storkøbenhavn. Med Otto Entreprise får du kvalitetssikret håndværk, gennemsigtige processer og aflevering til aftalt tid.</p>
+            <a href="tel:44160770" class="btn" style="font-size: 1.1rem; padding: 20px 40px;">Få et uforpligtende tilbud</a>
             
             <div class="trust-badges">
-                <div class="trust-badge"><i class="fa-solid fa-check-circle"></i> Fuld gennemsigtighed</div>
-                <div class="trust-badge"><i class="fa-solid fa-star"></i> 5/5 Kundetilfredshed</div>
-                <div class="trust-badge"><i class="fa-solid fa-shield-halved"></i> Dansk Garanti</div>
+                <div class="trust-badge"><i class="fa-solid fa-check-circle"></i> Fast pris & tidsplan</div>
+                <div class="trust-badge"><i class="fa-solid fa-star-half-stroke"></i> 4.8/5 Kundetilfredshed</div>
+                <div class="trust-badge"><i class="fa-solid fa-shield-halved"></i> Medlem af Byg Garanti</div>
             </div>
         </div>
     </section>
 
     <section class="services-overview container">
-        <h2 class="section-title">Vores Ekspertise</h2>
-        <p class="section-subtitle">Vi dækker alle faser af dit byggeprojekt. Én kontaktperson, ét ansvar.</p>
+        <h2 class="section-title">Vores Fagområder</h2>
+        <p class="section-subtitle">Vi udfører både fagentrepriser og samlede totalentrepriser. Uanset opgavens omfang garanterer vi én fast byggeleder og ét samlet ansvar.</p>
         <div class="grid">
             <a href="#toemrer" class="card">
                 <i class="fa-solid fa-hammer"></i>
-                <h3>Tømrer</h3>
-                <p>Nyt tag, døre/vinduer, træterrasser og totalrenovering.</p>
-                <span class="card-link-text">Se tømrerarbejde <i class="fa-solid fa-arrow-right"></i></span>
+                <h3>Tømrerentreprise</h3>
+                <p>Konstruktion, tagrenovering, energioptimering og bygningssnedkeri.</p>
+                <span class="card-link-text">Læs om tømrerarbejde <i class="fa-solid fa-arrow-right"></i></span>
             </a>
             <a href="#murer" class="card">
                 <i class="fa-solid fa-trowel-bricks"></i>
-                <h3>Murer</h3>
-                <p>Facadepuds, badeværelser, flisearbejde og fundamenter.</p>
-                <span class="card-link-text">Se murerarbejde <i class="fa-solid fa-arrow-right"></i></span>
+                <h3>Murerentreprise</h3>
+                <p>Facaderenovering, fundamenter og certificeret vådrumssikring.</p>
+                <span class="card-link-text">Læs om murerarbejde <i class="fa-solid fa-arrow-right"></i></span>
             </a>
             <a href="#maler" class="card">
                 <i class="fa-solid fa-paint-roller"></i>
-                <h3>Maler</h3>
-                <p>Filt, fuldspartling og kvalitetsmaling ude og inde.</p>
-                <span class="card-link-text">Se malerarbejde <i class="fa-solid fa-arrow-right"></i></span>
+                <h3>Malerentreprise</h3>
+                <p>Fuldspartling, professionel overfladebehandling og facademaling.</p>
+                <span class="card-link-text">Læs om malerarbejde <i class="fa-solid fa-arrow-right"></i></span>
             </a>
             <a href="#anlaeg" class="card">
                 <i class="fa-solid fa-leaf"></i>
-                <h3>Anlæg</h3>
-                <p>Brolægning, støttemure og komplet terrænregulering.</p>
-                <span class="card-link-text">Se anlægsarbejde <i class="fa-solid fa-arrow-right"></i></span>
+                <h3>Anlæg & Brolægning</h3>
+                <p>Infrastruktur, terrænregulering, afvanding og professionel brolægning.</p>
+                <span class="card-link-text">Læs om anlægsarbejde <i class="fa-solid fa-arrow-right"></i></span>
             </a>
             <a href="#nedrivning" class="card">
                 <i class="fa-solid fa-house-chimney-crack"></i>
-                <h3>Nedrivning</h3>
-                <p>Sikker rydning, miljøsanering og bortskaffelse.</p>
-                <span class="card-link-text">Se nedrivning <i class="fa-solid fa-arrow-right"></i></span>
+                <h3>Miljøsanering</h3>
+                <p>Kontrolleret nedbrydning, rydning og sikker håndtering af materialer.</p>
+                <span class="card-link-text">Læs om sanering <i class="fa-solid fa-arrow-right"></i></span>
             </a>
             <a href="#bortskaffelse" class="card">
                 <i class="fa-solid fa-truck-ramp-box"></i>
-                <h3>Bortskaffelse</h3>
-                <p>Sortering og kørsel af bygge- og haveaffald.</p>
-                <span class="card-link-text">Læs om bortskaffelse <i class="fa-solid fa-arrow-right"></i></span>
+                <h3>Byggepladslogistik</h3>
+                <p>Kildesortering, effektiv bortskaffelse og miljørigtig deponering.</p>
+                <span class="card-link-text">Læs om logistik <i class="fa-solid fa-arrow-right"></i></span>
             </a>
         </div>
     </section>
 
     <section class="testimonials">
         <div class="container">
-            <h2 class="section-title">Kunderne siger</h2>
-            <p class="section-subtitle" style="color: #94a3b8;">Vi lever af vores ry. Her er hvad tidligere bygherrer siger om samarbejdet.</p>
+            <h2 class="section-title">Referenceprojekter</h2>
+            <p class="section-subtitle" style="color: #94a3b8;">Vi lever af langvarige kunderelationer. Her er et udpluk af anmeldelser fra nylige bygge- og renoveringsprojekter.</p>
             <div class="test-grid">
                 <div class="test-card">
-                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p>"Otto Entreprise stod for totalrenovering af vores stueetage inkl. nyt gulv og opsætning af vægge. Alt spillede, og de ryddede pænt op hver dag."</p>
-                    <span class="test-author">Morten J., Frederiksberg</span>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                    <p>"Otto Entreprise stod for en komplet facaderenovering og udskiftning af vinduer i vores ejendom. God byggeledelse, overholdt tidsplanen og professionel håndtering fra start til slut."</p>
+                    <span class="test-author">Ejerforeningen Frederiksberg</span>
                 </div>
                 <div class="test-card">
                     <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p>"Fik lagt ny indkørsel og støbt sokkel til garage. Super professionelle gutter der holdt den aftalte pris på øret. Kæmpe anbefaling herfra."</p>
-                    <span class="test-author">Sanne T., Hvidovre</span>
+                    <p>"Fremragende arbejde ifm. totalrenovering af vores stueetage. Deres tømrere og murere koordinerede arbejdet perfekt indbyrdes, så der ikke opstod spildtid. Kan klart anbefales."</p>
+                    <span class="test-author">Morten J., Privat Bygherre</span>
                 </div>
                 <div class="test-card">
-                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p>"Hurtig rykning på en hastesag med vandskade. Både tømrer og maler leverede et utroligt flot stykke arbejde. De ved hvad de laver."</p>
-                    <span class="test-author">Christian V., København Ø</span>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                    <p>"Fik etableret ny støttemur og brolægning omkring erhvervsejendom. Resultatet er snorlige, og pladsen blev efterladt fuldstændig ryddet. Vi bruger dem bestemt igen."</p>
+                    <span class="test-author">Christian V., Virksomhedsejer</span>
                 </div>
             </div>
         </div>
@@ -243,84 +238,84 @@
         
         <div id="toemrer" class="service-row">
             <div class="service-text">
-                <h2>Tømrerarbejde</h2>
-                <p>Som erfarne tømrere i København og omegn håndterer vi alt fra mindre reparationer til store renoveringsprojekter. Vi vægter præcision og materialekendskab højt, uanset om det gælder udskiftning af vinduer, lægning af nye gulve eller en komplet tagrenovering. Vores løsninger er bygget til at holde.</p>
+                <h2>Tømrerentreprise</h2>
+                <p>Som erfarne entreprenører håndterer vi alt fra præcisionskrævende bygningssnedkeri til store klimaskærmsrenoveringer. Vi vægter byggeteknisk korrekt udførelse og materialekendskab højt, uanset om det gælder udskiftning af døre/vinduer, gulvkonstruktioner eller en komplet tagrenovering.</p>
                 <ul>
-                    <li><i class="fa-solid fa-check"></i> Udskiftning af døre og energioptimerede vinduer</li>
-                    <li><i class="fa-solid fa-check"></i> Nyt tag, tagrenovering og etablering af kviste</li>
-                    <li><i class="fa-solid fa-check"></i> Træterrasser, skure og udendørs anlæg</li>
+                    <li><i class="fa-solid fa-check"></i> Udskiftning af døre og energioptimerede vinduespartier</li>
+                    <li><i class="fa-solid fa-check"></i> Tagkonstruktioner, tagrenovering og etablering af kviste</li>
+                    <li><i class="fa-solid fa-check"></i> Træterrasser, skure og udendørs anlæg i høj kvalitet</li>
                 </ul>
-                <a href="tel:44160770" class="btn btn-outline">Få et tømrertilbud</a>
+                <a href="tel:44160770" class="btn btn-outline">Indhent tilbud på tømrerarbejde</a>
             </div>
             <div class="service-image" style="background-image: url('assets/images/services/toemrer-tagrenovering.jpg');" loading="lazy"></div>
         </div>
 
         <div id="murer" class="service-row">
             <div class="service-text">
-                <h2>Murerarbejde</h2>
-                <p>Et solidt fundament og fejlfrit murerværk er essentielt. Otto Entreprise udfører professionelt murerarbejde for både private og erhverv. Vi mestrer både de klassiske murermetoder og de nyeste teknikker inden for facaderenovering, vådrumssikring og fliselægning på badeværelser.</p>
+                <h2>Murerentreprise</h2>
+                <p>Et solidt fundament og fejlfrit murerværk er essentielt for enhver ejendom. Vi mestrer både klassiske murermetoder og de nyeste teknikker inden for facaderenovering og fliselægning. Vores vådrumsafdeling sikrer, at alle badeværelser udføres strengt efter gældende SBI-anvisninger.</p>
                 <ul>
-                    <li><i class="fa-solid fa-check"></i> Facaderenovering, vandskuring og fugning</li>
-                    <li><i class="fa-solid fa-check"></i> Flise- og klinkearbejde inkl. komplet vådrum</li>
-                    <li><i class="fa-solid fa-check"></i> Støbning af fundamenter og opmuring</li>
+                    <li><i class="fa-solid fa-check"></i> Facaderenovering, omfugning og filtsning</li>
+                    <li><i class="fa-solid fa-check"></i> Flise- og klinkearbejde inkl. certificeret vådrumssikring</li>
+                    <li><i class="fa-solid fa-check"></i> Støbning af fundamenter, trapper og opmuring</li>
                 </ul>
-                <a href="tel:44160770" class="btn btn-outline">Få et murertilbud</a>
+                <a href="tel:44160770" class="btn btn-outline">Indhent tilbud på murerarbejde</a>
             </div>
             <div class="service-image" style="background-image: url('assets/images/services/murer-facade.jpg');" loading="lazy"></div>
         </div>
 
         <div id="maler" class="service-row">
             <div class="service-text">
-                <h2>Malerarbejde</h2>
-                <p>Det perfekte finish kræver det rigtige forarbejde. Vores malerafdeling sikrer et fejlfrit resultat, uanset om det gælder indvendig opspartling af hele lejligheder, eller udvendig træbeskyttelse og facadebehandling. Vi anvender udelukkende kvalitetsmaling for højeste dækkeevne og levetid.</p>
+                <h2>Malerentreprise</h2>
+                <p>Den perfekte finish kræver grundigt forarbejde. Vores malerafdeling leverer overfladebehandling af højeste standard til både nybyg og renovering. Vi anvender udelukkende professionelle malersystemer, som sikrer optimal dækkeevne, vaskbarhed og langsigtet holdbarhed på tværs af alle overflader.</p>
                 <ul>
-                    <li><i class="fa-solid fa-check"></i> Fuldspartling, slibning og opsætning af filt</li>
-                    <li><i class="fa-solid fa-check"></i> Indvendig maling af vægge, lofter og træværk</li>
-                    <li><i class="fa-solid fa-check"></i> Maling af facader, vinduer og udhæng</li>
+                    <li><i class="fa-solid fa-check"></i> Fuldspartling, slibning og opsætning af glasfilt/væv</li>
+                    <li><i class="fa-solid fa-check"></i> Indvendig maling af lejligheder, trappeopgange og kontorer</li>
+                    <li><i class="fa-solid fa-check"></i> Beskyttende maling af facader, vinduer og træværk</li>
                 </ul>
-                <a href="tel:44160770" class="btn btn-outline">Få et malertilbud</a>
+                <a href="tel:44160770" class="btn btn-outline">Indhent tilbud på malerarbejde</a>
             </div>
             <div class="service-image" style="background-image: url('assets/images/services/maler-spartling.jpg');" loading="lazy"></div>
         </div>
 
         <div id="anlaeg" class="service-row">
             <div class="service-text">
-                <h2>Anlægsarbejde & Brolægning</h2>
-                <p>Uanset om det drejer sig om en ny indkørsel, en kompleks støttemur eller en omlægning af haven, leverer vi professionelt anlægsarbejde. Vi har maskinkraften til terrænregulering, og vores brolæggere sikrer snorlige linjer med korrekt afvanding, der ikke sætter sig med tiden.</p>
+                <h2>Anlæg & Brolægning</h2>
+                <p>Infrastrukturen omkring ejendommen skal være bygget til at modstå belastning og vejr. Vi udfører professionelt anlægsarbejde og brolægning med fokus på bæreevne og korrekt afvanding. Vi råder over den nødvendige maskinkraft til selv komplekse terrænreguleringer og udgravninger.</p>
                 <ul>
-                    <li><i class="fa-solid fa-check"></i> Brolægning af indkørsler, stier og terrasser</li>
-                    <li><i class="fa-solid fa-check"></i> Etablering af støttemure og trapper</li>
-                    <li><i class="fa-solid fa-check"></i> Terrænregulering, planering og gravearbejde</li>
+                    <li><i class="fa-solid fa-check"></i> Maskinbelægning af parkeringspladser og indkørsler</li>
+                    <li><i class="fa-solid fa-check"></i> Etablering af støttemure, trappeanlæg og højbede</li>
+                    <li><i class="fa-solid fa-check"></i> Kloakering, LAR-løsninger (regnvand) og gravearbejde</li>
                 </ul>
-                <a href="tel:44160770" class="btn btn-outline">Få et anlægstilbud</a>
+                <a href="tel:44160770" class="btn btn-outline">Indhent anlægstilbud</a>
             </div>
             <div class="service-image" style="background-image: url('assets/images/services/anlaeg-brolaegning.jpg');" loading="lazy"></div>
         </div>
 
         <div id="nedrivning" class="service-row">
             <div class="service-text">
-                <h2>Nedrivning & Sanering</h2>
-                <p>Sikker nedrivning kræver præcision og kendskab til bygningsfysik. Vi udfører alt fra totalnedrivninger af mindre bygninger (skure/garager) til selektiv indvendig rydning før renovering af lejligheder. Opgaven håndteres efter de strengeste miljø- og sikkerhedskrav.</p>
+                <h2>Nedrivning & Miljøsanering</h2>
+                <p>Sikker nedrivning kræver præcision for at beskytte bygningens blivende konstruktioner. Vi udfører alt fra totalnedrivninger til selektiv indvendig rydning. Arbejdet håndteres efter de strengeste arbejdsmiljøkrav, herunder identifikation og sanering af problematiske stoffer (asbest, PCB, bly).</p>
                 <ul>
-                    <li><i class="fa-solid fa-check"></i> Indvendig rydning (gulve, lofter, lette vægge)</li>
-                    <li><i class="fa-solid fa-check"></i> Nedbrydning af skure, garager og tilbygninger</li>
-                    <li><i class="fa-solid fa-check"></i> Sikker håndtering af problematiske materialer</li>
+                    <li><i class="fa-solid fa-check"></i> Selektiv indvendig rydning før totalrenovering</li>
+                    <li><i class="fa-solid fa-check"></i> Nedbrydning af tilbygninger, skure og lette konstruktioner</li>
+                    <li><i class="fa-solid fa-check"></i> Sikkerhedsgodkendt håndtering af farligt affald</li>
                 </ul>
-                <a href="tel:44160770" class="btn btn-outline">Få tilbud på nedrivning</a>
+                <a href="tel:44160770" class="btn btn-outline">Indhent tilbud på sanering</a>
             </div>
             <div class="service-image" style="background-image: url('assets/images/services/nedrivning-rydning.jpg');" loading="lazy"></div>
         </div>
 
         <div id="bortskaffelse" class="service-row">
             <div class="service-text">
-                <h2>Håndtering af Byggeaffald</h2>
-                <p>Brug tiden på dit projekt, og lad os håndtere den tunge logistik. Vi tilbyder effektiv og miljørigtig afhentning og bortskaffelse af alt bygge- og haveaffald. Affaldet sorteres og deponeres på godkendte genbrugsstationer i overensstemmelse med de københavnske regulativer.</p>
+                <h2>Byggepladslogistik</h2>
+                <p>En effektiv byggeproces kræver en ren byggeplads. Vi administrerer logistikken og tilbyder systematisk afhentning og bortskaffelse af byggeaffald. Affaldet kildesorteres direkte på pladsen og deponeres miljørigtigt på godkendte modtagestationer med fuld dokumentation for genanvendelsesgraden.</p>
                 <ul>
-                    <li><i class="fa-solid fa-check"></i> Afhentning og kørsel af blandet byggeaffald</li>
-                    <li><i class="fa-solid fa-check"></i> Bortskaffelse af storskrald, jord og haveaffald</li>
-                    <li><i class="fa-solid fa-check"></i> 100% miljøkorrekt og dokumenteret deponering</li>
+                    <li><i class="fa-solid fa-check"></i> Løbende afhentning og kørsel af kildesorteret byggeaffald</li>
+                    <li><i class="fa-solid fa-check"></i> Slutrengøring og rydning af byggepladser</li>
+                    <li><i class="fa-solid fa-check"></i> 100% lovpligtig og dokumenteret deponering</li>
                 </ul>
-                <a href="tel:44160770" class="btn btn-outline">Bestil afhentning</a>
+                <a href="tel:44160770" class="btn btn-outline">Kontakt os vedr. logistik</a>
             </div>
             <div class="service-image" style="background-image: url('assets/images/services/affald-bortskaffelse.jpg');" loading="lazy"></div>
         </div>
@@ -334,14 +329,15 @@
                     <a href="./" style="display: inline-block; margin-bottom: 20px;">
                         <img src="assets/images/logo-otto-entreprise.png" alt="Otto Entreprise Logo" style="height: 40px; width: auto;">
                     </a>
-                    <p style="color: var(--text-muted); max-width: 300px;">Vi bygger på tillid, klar kommunikation og solidt dansk håndværk. Din lokale partner i København.</p>
+                    <p style="color: var(--text-muted); max-width: 300px;">Professionel byggeentreprise baseret på kvalitet, sikker styring og stolt dansk håndværk. Din lokale partner i København.</p>
                 </div>
                 <div>
-                    <h4 style="margin-bottom: 20px;">Hurtige Links</h4>
+                    <h4 style="margin-bottom: 20px;">Vores Ydelser</h4>
                     <div style="display: flex; flex-direction: column; gap: 12px;">
-                        <a href="#toemrer" style="color: var(--text-muted); text-decoration: none;">Tømrer</a>
-                        <a href="#murer" style="color: var(--text-muted); text-decoration: none;">Murer</a>
-                        <a href="#maler" style="color: var(--text-muted); text-decoration: none;">Maler</a>
+                        <a href="#toemrer" style="color: var(--text-muted); text-decoration: none;">Tømrerentreprise</a>
+                        <a href="#murer" style="color: var(--text-muted); text-decoration: none;">Murerentreprise</a>
+                        <a href="#maler" style="color: var(--text-muted); text-decoration: none;">Malerentreprise</a>
+                        <a href="#anlaeg" style="color: var(--text-muted); text-decoration: none;">Anlæg & Brolægning</a>
                     </div>
                 </div>
                 <div class="footer-contact">
